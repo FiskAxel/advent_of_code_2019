@@ -1,5 +1,5 @@
 fn main() {
-    let input = std::fs::read_to_string("src/input02.txt")
+    let input = std::fs::read_to_string("src/input.txt")
         .expect("Unreadable");
     let intcode: Vec<i32> = input
         .split(',')
