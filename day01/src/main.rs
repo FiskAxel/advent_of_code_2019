@@ -1,14 +1,14 @@
 fn main() {
     let input = std::fs::read_to_string("src/input01.txt")
         .expect("Unreadable");
-    let nums: Vec<i32> = input
+    let intcode: Vec<i32> = input
         .trim()
         .lines()
         .map(|n| n.parse::<i32>().expect("parse error"))
         .collect();
 
-    println!("Part 1: {}", part1(&nums));
-    println!("Part 2: {}", part2(&nums));
+    println!("Part 1: {}", part1(&intcode));
+    println!("Part 2: {}", part2(&intcode));
 }
 
 fn part1(nums: &Vec<i32>) -> i32 {
